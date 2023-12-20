@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Just Player</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Just Player</h1>
+    <audio id="audioPlayer" controls>
+      <source src="your-audio-file.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    <br>
+    <button onclick="playPause()">Play/Pause</button>
+    <button onclick="stop()">Stop</button>
+    <button onclick="setVolume(0.5)">Set Volume 50%</button>
+    <p id="currentTime">0:00</p>
+    <p id="duration">0:00</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
